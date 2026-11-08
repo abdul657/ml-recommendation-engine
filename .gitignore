@@ -10,6 +10,7 @@ htmlcov/
 .DS_Store
 .ipynb_checkpoints/
 data/processed/
+data/raw/ml-100k/
 data/raw/ml-100k.zip
 saved_models/*.pkl
 !saved_models/.gitkeep
