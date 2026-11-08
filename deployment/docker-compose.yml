@@ -1,11 +1,11 @@
-version: '3.8'
-
 services:
   api:
-    build: ..
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
     ports:
       - "8000:8000"
     volumes:
-      - ../saved_models:/app/saved_models
-      - ../data:/app/data
+      - ../saved_models:/app/saved_models:ro
+      - ../data:/app/data:ro
     restart: unless-stopped
